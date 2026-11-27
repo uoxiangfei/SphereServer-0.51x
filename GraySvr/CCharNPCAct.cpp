@@ -2507,6 +2507,7 @@ void CChar::NPC_OnTickAction()
 	case NPCACT_FOLLOW_TARG:
 		// continue to follow our target.
 		if ( ! GetRandVal( 4 ))		// 约每 4 个 tick 扫一次，避免太频繁
+	    NPC_LookAround();       // ★ 就是这行！你漏掉了
 		NPC_Act_Follow();
 		break;
 	case NPCACT_STAY:

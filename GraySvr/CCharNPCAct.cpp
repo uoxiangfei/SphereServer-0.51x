@@ -1,9 +1,3 @@
-	case NPCACT_FOLLOW_TARG:
-		// continue to follow our target.
-		if ( ! GetRandVal( 4 ))		// scan surroundings every ~4 ticks
-			NPC_LookAround();		// let following pets notice owner's combat
-		NPC_Act_Follow();
-		break;//
 // CCharNPCAct.CPP
 // Copyright Menace Software (www.menasoft.com).
 //
